@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+}
+header {
+    height: 40vh;
+    
+}
+main {
+    height: 60vh;
+    text-align: center;
+    
+}
+main a {
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
