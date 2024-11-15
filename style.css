@@ -1,9 +1,36 @@
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 body {
     background-color: black;
 }
+nav {
+    color: white;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+nav h2 {
+    font-size: 20px;
+    padding: 5px 5px;
+    border: 1px solid white;
+}
+nav h2:hover {
+    cursor: pointer;
+}
 header {
     height: 40vh;
+    padding: 100px 0;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header hr {
+    margin-top: 100px;
+    width: 70vw;
+    border-top: 5px solid white;
 }
 main {
     height: 60vh;
@@ -19,10 +46,13 @@ main {
 }
 .main__example-work-block li {
     margin-top: 20px;
-    
+    list-style-type: none;
 }
 .main__example-work-block a {
     outline: none;
     text-decoration: none;
     color: white;
+}
+.main__example-work-block a:hover {
+    font-weight: bold;
 }
