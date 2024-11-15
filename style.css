@@ -4,21 +4,6 @@ h1 {
 body {
     background-color: black;
 }
-nav {
-    color: white;
-    padding: 10px 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-}
-nav h2 {
-    font-size: 20px;
-    padding: 5px 5px;
-    border: 1px solid white;
-}
-nav h2:hover {
-    cursor: pointer;
-}
 header {
     height: 40vh;
     padding: 100px 0;
