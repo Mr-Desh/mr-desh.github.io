@@ -1,5 +1,3 @@
-alert("Работу выполнил студент:\nНикифоров Егор\nГруппы:\n09.02.31");
-
 // DARK THEME
 const toggleTheme = document.getElementById('toggleDark')
 

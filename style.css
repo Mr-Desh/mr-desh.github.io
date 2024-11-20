@@ -1,5 +1,11 @@
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition-duration: 1s;
+}
+h1:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 body {
     background-color: black;
@@ -11,6 +17,15 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+header span {
+    text-align: center;
+    width: 100px;
+    margin-bottom: 20px;
+}
+header span:hover {
+    cursor: pointer;
+    font-weight: bold;
 }
 header hr {
     margin-top: 100px;
