@@ -43,6 +43,7 @@ main {
     width: 200px;
     text-align: center;
     border: 3px solid white;
+    margin: 30px;
 }
 .main__example-work-block li {
     margin-top: 20px;
