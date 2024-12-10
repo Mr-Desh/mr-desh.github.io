@@ -1,31 +1,32 @@
 * {
-    font-size: 16px;
+    font-size: 10px;
 }
 
-header {
-    background-color: rgb(43, 40, 46);
-    height: 50vh;
-    display: flex;
-    flex-direction: row;
+.--color-white {
+    color: white;
 }
-.header-left {
+.--fz-2x {
+    font-size: 2rem;
+}
+.--fw-bold {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+.banner-sale {
     background-color: black;
-    width: 30vw;
-    height: 100%;
-    color: white;
 }
-.header-left img {
-    margin-top: 10vh;
-    margin-left: 10vw;
+
+nav {
+    padding: 50px 0;
 }
-.header-right {
-    width: 70vw;
-    height: 100%;
-    padding: 0 50px;
-    text-align: end;
+nav li {
+    display: inline;
 }
-.header-right li {
-    list-style: none;
-    display:inline-block;
-    color: white;
+nav i {
+    font-size: 3rem;
+    margin-right: 15px;
 }
