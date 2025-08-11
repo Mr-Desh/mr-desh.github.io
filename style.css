@@ -13,8 +13,7 @@ body {
 }
 
 header {
-    height: 40vh;
-    padding: 100px 0;
+    padding: 5% 0;
     color: white;
     display: flex;
     flex-direction: column;
@@ -30,23 +29,22 @@ header span:hover {
     font-weight: bold;
 }
 header hr {
-    margin-top: 100px;
+    margin-top: 3%;
     width: 70vw;
     border-top: 5px solid white;
 }
 
 main {
     height: 60vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 .main__example-work-block {
     height: 200px;
     width: 200px;
     text-align: center;
     border: 3px solid white;
-    margin: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 0 0 0 0;
 }
 .main__example-work-block p {
     margin-top: 20px;
