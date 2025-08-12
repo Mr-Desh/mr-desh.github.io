@@ -42,7 +42,7 @@ header {
 }
 .header-main {
     width: 50%;
-    height: 500px;}
+}
 .header-main__left {
     align-content: center;
     font-size: 16px;}
@@ -51,11 +51,10 @@ header {
 .header-main__right {
     align-content: end;}
 .block {
-    width: 255px;
+    width: 250px;
     padding: 3%;
     font-size: 21px;
-    margin-bottom: 5%;
-    margin-left: 5%;
+    margin: 5% 5% 5% 5%;
     border: 1px;}
 .block p{
     font-size: 14px;
@@ -171,4 +170,20 @@ form input {
     box-shadow: 2px 2px rgba(0, 0, 0, 0.178);}
 form img:hover {
     cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .news-card__text {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .news-card img {
+        height: 100px;
+    }
+}
+@media (max-width: 992px) {
+    .news-card img {
+        height: 80px;
+        
+    }
 }
