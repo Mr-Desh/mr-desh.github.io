@@ -6,9 +6,10 @@ var body = document.querySelector('body')
 
 var h1 = document.getElementById('h1')
 var hr = document.getElementById('hr')
+var a = document.getElementById('a')
 
 theme.addEventListener('click', function() {
-    if (theme.style.color == 'white') {
+    if (theme.innerText == 'Light Theme') {
         theme.style.color = 'black'
         theme.innerText = 'Dark Theme'
 
@@ -17,6 +18,8 @@ theme.addEventListener('click', function() {
         h1.style.color = 'black'
 
         hr.style.borderTopColor = 'black'
+
+        a.style.color = "black"
     } else {
 		theme.style.color = 'white'
         theme.innerText = 'Light Theme'
@@ -26,5 +29,7 @@ theme.addEventListener('click', function() {
         h1.style.color = 'white'
 
         hr.style.borderTopColor = 'white'
+
+        a.style.color = "white"
 	}
 })
