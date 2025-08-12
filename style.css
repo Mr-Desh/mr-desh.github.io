@@ -1,6 +1,7 @@
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     transition-duration: 1s;
+    text-align: center;
 }
 h1:hover {
     transform: scale(1.1);
@@ -9,41 +10,45 @@ h1:hover {
 
 body {
     background-color: black;
-    padding: 0 10%;
 }
 
 header {
-    padding: 5% 0;
+    padding: 1% 0;
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 header span {
-    text-align: center;
+    align-self:last baseline;
     width: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 header span:hover {
     cursor: pointer;
     font-weight: bold;
 }
 header hr {
-    margin-top: 3%;
     width: 70vw;
     border-top: 5px solid white;
+    align-self: center;
 }
 
 main {
     height: 60vh;
+    padding: 0 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: 0.3s;
 }
 .main__example-work-block {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     text-align: center;
     border: 3px solid white;
     margin-left: 2%;
     margin-right: 2%;
+    margin-bottom: 25px;
     padding: 0 0 0 0;
 }
 .main__example-work-block p {
@@ -53,19 +58,13 @@ main {
     outline: none;
     text-decoration: none;
     color: white;
+    font-size: 20px;
 }
 .main__example-work-block a:hover {
     font-weight: bold;
 }
 
+/* PHONES */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 20px;
-    }
-    body {
-        padding: 0 25%;
-    }
-    .main__example-work-block {
-        margin-bottom: 5%;
-    }
+    
 }

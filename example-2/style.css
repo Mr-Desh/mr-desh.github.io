@@ -9,39 +9,40 @@ h1 {
     font-size: 64px;
     text-transform: uppercase;}
 header {
-    height: 1080px;
     background-image: url(images/fone.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: white;}
 .nav {
-    height: 100px;
     border-bottom: 3px solid white;
     background-color: rgba(0, 0, 0, 0.342);
-    font-size: 25px;
+    font-size: 22px;
 
     /* Фиксация */
     position: sticky;
     top: 0;}
+.nav ul {
+    margin-top: 1%;
+}
 .nav li {
     display: inline;
-    margin: 0 2%;}
-.nav li:hover {
-    cursor: pointer;
-    font-weight: bold;
-    color: white;}
+    margin: 0 1%;}
 .nav li a {
     outline: none;
     text-decoration: none;
     color: white;
+}
+.nav a:hover {
+    cursor: pointer;
+    font-weight: bold;
 }
 .nav span:hover {
     cursor: pointer;
 }
 .header-main {
     width: 50%;
-    height: 980px;}
+    height: 500px;}
 .header-main__left {
     align-content: center;
     font-size: 16px;}
@@ -51,7 +52,7 @@ header {
     align-content: end;}
 .block {
     width: 255px;
-    padding: 6%;
+    padding: 3%;
     font-size: 21px;
     margin-bottom: 5%;
     margin-left: 5%;
@@ -69,17 +70,16 @@ header {
     background-color: #F6404F;}
 
 .side-menu {
-    height: 426px;
     background-color: #2378FC;
     color: white;}
 .side-menu__main {
-    padding: 50px 0;
+    padding: 20px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;}
 .side-menu__main__blocks li {
     list-style-type: none;
-    margin-bottom: 20px;}
+    margin-bottom: 10px;}
 .side-menu__main__blocks p {
     font-size: 30px;}
 .side-menu__main__blocks a {
@@ -93,7 +93,7 @@ header {
     cursor: pointer;}
 .events {
     background-color: #FFC41E;
-    padding: 50px 0;}
+    padding: 30px 0;}
 .events h2 {
     font-size: 30px;}
 .events__text {
@@ -101,10 +101,12 @@ header {
     text-decoration: underline;}
 .card {
     background: none;
-    border: none;}
+    border: none;
+    margin-bottom: 20px;
+}
 .card__text-1 {
     font-size: 14px;
-    margin-top: 10px;}
+    margin-top: 1%}
 .card__text-2 {
     font-size: 21px;
     color: #F6404F;}
@@ -114,11 +116,11 @@ header {
     font-size: 16px;}
 
 .news {
-    padding: 80px 0;}
+    padding: 30px 0;}
 .news-card {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;}
+    margin-top: 20px;}
 .news-card__text {
     font-size: 21px;
     font-weight: bold;
@@ -129,15 +131,14 @@ header {
 
 footer {
     background: #30BCC9;
-    height: 476px;}
+}
 .footer {
-    height: 476px;
-    padding: 50px 0;
+    padding: 20px 0;
     color: white;
     display: flex;
     flex-direction: row;}
 .footer__colomn__block {
-    margin-bottom: 50px;}
+    margin-bottom: 20px;}
 .footer__colomn__block h3 {
     font-size: 21px;
     margin-bottom: 20px;}
