@@ -1,19 +1,44 @@
+.--backgrond_grey {
+    background-color: grey;
+}
+
+.--backgrond_aqua {
+    background-color: rgba(116, 253, 253, 0.758);
+}
+
 header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     text-transform: uppercase;
     font-size: 30px;
 }
 
 .brand_name {
-    padding: 20px 50px;
+    width: 30%;
+    padding: 1% 10%;
 }
 
 .stay_home {
-    padding: 20px 50px;
+    width: 70%;
+    padding: 2% 5%;
     color: aqua;
+    text-align: center;
 }
 
-.--backgrond_grey {
-    background-color: grey;
+.stop_covid {
+    padding: 4% 10%;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.headder_numbers {
+    padding: 1% 2%;
+    text-align: center;
+    font-weight: bold;
+}
+.headder_numbers p {
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
 }
