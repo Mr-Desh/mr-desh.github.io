@@ -100,9 +100,36 @@ footer i:hover {
         font-size: 50px;
     }
 }
-@media (width < 400px) {
+@media (width < 750px) {
+    .stop_covid {
+        font-size: 30px;
+    }
+}
+@media (width < 500px) {
     .brand_name {
-        padding: 5% 1%;
-        
+        padding: 5% 2%;
+        font-size: 26px;
+    }
+    .stop_covid {
+        font-size: 20px;
+    }
+    .headder_numbers {
+        font-size: 20px;
+    }
+    .headder_numbers p {
+        font-size: 0;
+    }
+    main {
+        padding: 2% 2%;
+        gap: 10px;
+    }
+    .main_left {
+        font-size: 20px;
+    }
+    .main_right {
+        font-size: 8px;
+    }
+    footer {
+        font-size: 15px;
     }
 }
