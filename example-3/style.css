@@ -3,7 +3,7 @@
 }
 
 .--backgrond_aqua {
-    background-color: rgba(116, 253, 253, 0.758);
+    background-color: rgb(0, 236, 236);
 }
 
 header {
@@ -14,31 +14,95 @@ header {
     font-size: 30px;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 70px;
+    padding: 7% 7%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2% 0;
+    font-size: 30px;
+    color: white;
+}
+footer i {
+    margin-right: 5%;
+}
+footer i:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
 .brand_name {
     width: 30%;
-    padding: 1% 10%;
+    padding: 2% 10%;
+    line-height: 90%;
 }
 
 .stay_home {
     width: 70%;
     padding: 2% 5%;
-    color: aqua;
+    color: rgb(0, 236, 236);
+    font-weight: bold;
     text-align: center;
 }
 
 .stop_covid {
-    padding: 4% 10%;
+    padding: 10% 10%;
     font-size: 80px;
     font-weight: bold;
+    background-color: #98999b;
+    color: white;
+    line-height: 90%;
 }
 
 .headder_numbers {
     padding: 1% 2%;
     text-align: center;
     font-weight: bold;
+    line-height: 90%;
 }
 .headder_numbers p {
     font-weight: normal;
     font-size: 14px;
     text-align: left;
+    line-height: 100%;
+    margin-top: 2%;
+}
+
+.main_left {
+    color: rgb(0, 236, 236);
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.main_right {
+    font-size: 20px;
+    text-align: justify;
+}
+
+@media (width < 1210px) {
+    .stop_covid {
+        font-size: 60px;
+    }
+}
+@media (width < 980px) {
+    main {
+        gap: 50px;
+    }
+    .stop_covid {
+        font-size: 50px;
+    }
+}
+@media (width < 400px) {
+    .brand_name {
+        padding: 5% 1%;
+        
+    }
 }
