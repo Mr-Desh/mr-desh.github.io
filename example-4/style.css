@@ -1,27 +1,128 @@
+h1 {
+    font-size: 90px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h4 {
+    margin-top: 7px;
+}
+
 nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 3%;
+    padding: 2%;
     font-size: 32px;
-    background-color: grey;
-    color: white;
+    background-color: rgb(255, 219, 141);
 }
 .logo {
     font-weight: bold;
 }
 nav a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 nav a:hover {
     font-weight: bold;
 }
 
+.header_offer {
+    padding: 5% 10%;
+    font-size: 50px;
+}
+.header_offer p {
+    margin-top: 5%;
+    font-size: 20px;
+    color: grey;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+.usluga {
+    text-align: center;
+    padding: 2%;
+}
+.usluga p {
+    font-size: 14px;
+    text-align: justify;
+}
+.usluga_more {
+    width: 50%;
+    background-color: rgb(255, 219, 141);
+    padding: 5%;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+.usluga_more:hover {
+    background-color: rgb(255, 191, 53);
+    font-weight: bold;
+    cursor: pointer;
+}
+section {
+    background: url(images/about_us.jpg);        
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10%;
+    filter: brightness(80%);
+}
+.about_us {
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 5%;
+}
+.main_Advantages {
+    padding: 6%;
+
+}
+.main_Advantages-numbers {
+    background-color: rgb(255, 191, 53);
+    padding: 7px 23px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.contacts {
+    padding: 5%;
+    font-size: 30px;
+}
+.contacts p {
+    margin: 3% 0;
+    font-size: 20px;
+    color: grey;
+}
+
 footer {
     background-color: grey;
     color: white;
-    padding: 2%;
+    padding: 1%;
     text-align: center;
-    font-size: 24px;
+    font-size: 26px;
+}
+footer i {
+    margin: 2%;
+}
+footer i:hover {
+    color: rgb(255, 191, 53);
+    cursor: pointer;
 }
