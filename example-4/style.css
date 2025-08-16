@@ -26,10 +26,7 @@ nav {
     background-color: rgb(255, 219, 141);
 }
 .logo {
-    width: 100%;
-    text-align: center;
     font-weight: bold;
-
 }
 nav a {
     text-decoration: none;
@@ -56,13 +53,13 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0 5%;
+    justify-content: center;
+    padding: 3% 3%;
 }
 .usluga {
-    width: 380px;
+    width: 30%;
     text-align: center;
-    padding: 2%;
+    padding: 0 1%;
 }
 .usluga p {
     font-size: 14px;
@@ -86,6 +83,7 @@ section {
     background-size: cover;
     padding: 10%;
     filter: brightness(80%);
+    margin-top: 20px;
 }
 .about_us {
     background-color: rgba(0, 0, 0, 0.521);
@@ -98,13 +96,14 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 6%;
+    justify-content: center;
+    padding: 3%;
 }
 .main_Advantages-card {
-    width: 320px;
+    width: 350px;
     display: flex;
     flex-direction: row;
+    margin-bottom: 20px;
 }
 .main_Advantages-numbers {
     background-color: rgb(255, 191, 53);
@@ -142,18 +141,15 @@ footer i:hover {
     cursor: pointer;
 }
 
-@media (width < 1050px) {
+@media (width < 980px) {
     .usluga {
-        width: 350px;
+        width: 50%;
     }
 }
 
-@media (width < 778px) {
+@media (width < 470px) {
     .usluga {
-        width: 500px;
-    }
-    .usluga img {
-        width: 200px;  
+        width: 300px;
     }
 }
 
@@ -180,9 +176,6 @@ footer i:hover {
         font-size: 20px;
         color: grey;
     }
-    .usluga {
-        width: 300px;
-    }
     section {
         background: NONE;
         padding: 0 0;
@@ -196,6 +189,5 @@ footer i:hover {
     .about_us {
         font-size: 14px;
         text-align: justify;
-        color 
     }
 }
