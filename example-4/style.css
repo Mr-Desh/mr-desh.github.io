@@ -3,44 +3,48 @@ h1 {
     font-family: sans-serif;
     font-weight: bold;
 }
-
 h2 {
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 30px;
+    text-align: center;
 }
-
 h3 {
     font-size: 30px;
     font-weight: bold;
 }
-
 h4 {
     margin-top: 7px;
 }
 
 nav {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    padding: 2%;
+    justify-content: space-around;
+    padding: 3px 5%;
     font-size: 32px;
     background-color: rgb(255, 219, 141);
 }
 .logo {
+    width: 100%;
+    text-align: center;
     font-weight: bold;
+
 }
 nav a {
     text-decoration: none;
     color: black;
+    width: 150px;
+    text-align: center;
 }
 nav a:hover {
     font-weight: bold;
 }
 
 .header_offer {
-    padding: 5% 10%;
+    padding: 3% 10%;
     font-size: 50px;
+    line-height: 90%
 }
 .header_offer p {
     margin-top: 5%;
@@ -52,9 +56,11 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 5%;
+    justify-content: space-around;
+    padding: 0 5%;
 }
 .usluga {
+    width: 380px;
     text-align: center;
     padding: 2%;
 }
@@ -89,8 +95,16 @@ section {
     padding: 5%;
 }
 .main_Advantages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 6%;
-
+}
+.main_Advantages-card {
+    width: 320px;
+    display: flex;
+    flex-direction: row;
 }
 .main_Advantages-numbers {
     background-color: rgb(255, 191, 53);
@@ -100,7 +114,8 @@ section {
     border-radius: 50%;
     font-size: 30px;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
 }
 .contacts {
     padding: 5%;
@@ -125,4 +140,62 @@ footer i {
 footer i:hover {
     color: rgb(255, 191, 53);
     cursor: pointer;
+}
+
+@media (width < 1050px) {
+    .usluga {
+        width: 350px;
+    }
+}
+
+@media (width < 778px) {
+    .usluga {
+        width: 500px;
+    }
+    .usluga img {
+        width: 200px;  
+    }
+}
+
+@media (width < 380px) {
+    nav {
+        font-size: 20px;
+    }
+    .logo {
+        font-size: 30px;
+    }
+    nav a {
+        width: 60px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    .header_offer {
+        padding: 3% 5%;
+        font-size: 20px;
+        line-height: 90%
+    }
+    .header_offer p {
+        margin-top: 5%;
+        font-size: 20px;
+        color: grey;
+    }
+    .usluga {
+        width: 300px;
+    }
+    section {
+        background: NONE;
+        padding: 0 0;
+        filter: brightness(100%);
+    }
+    h2 {
+        margin-bottom: 5px;
+        text-align: center;
+        font-size: 30px;
+    }
+    .about_us {
+        font-size: 14px;
+        text-align: justify;
+        color 
+    }
 }
