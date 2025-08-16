@@ -28,13 +28,12 @@ header span:hover {
     font-weight: bold;
 }
 header hr {
-    width: 70vw;
     border-top: 5px solid white;
-    align-self: center;
+    width: 70%;
+    margin: 1% auto;
 }
 
 main {
-    height: 60vh;
     padding: 0 3%;
     display: flex;
     flex-wrap: wrap;
@@ -42,8 +41,8 @@ main {
     transition: 0.3s;
 }
 .main__example-work-block {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     text-align: center;
     border: 3px solid white;
     margin-left: 2%;
@@ -52,7 +51,7 @@ main {
     padding: 0 0 0 0;
 }
 .main__example-work-block p {
-    margin-top: 20px;
+    margin: 15% 0;
 }
 .main__example-work-block a {
     outline: none;
@@ -64,7 +63,22 @@ main {
     font-weight: bold;
 }
 
-/* PHONES */
-@media (max-width: 768px) {
-    
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1%;
+}
+.vkontakte {
+    color: white;
+    background-color: rgb(0, 132, 255);
+    padding: 1% 2%;
+    font-size: 20px;
+}
+.vkontakte a {
+    text-decoration: none;
+    color: white;
+}
+.vkontakte a:hover {
+    font-weight: bold;
 }
