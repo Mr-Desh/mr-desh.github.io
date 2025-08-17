@@ -24,6 +24,9 @@ nav {
     padding: 3px 5%;
     font-size: 32px;
     background-color: rgb(255, 219, 141);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 .logo {
     font-weight: bold;
@@ -39,7 +42,7 @@ nav a:hover {
 }
 
 .header_offer {
-    padding: 3% 10%;
+    padding: 5% 10%;
     font-size: 50px;
     line-height: 90%
 }
@@ -55,6 +58,23 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     padding: 3% 3%;
+}
+.up {
+    border-radius: 50%;
+    padding: 1%;
+    background-color: rgb(255, 191, 53);
+    color: black;
+    position: fixed;
+    left: 95%;
+    top: 90%;
+    z-index: 1;
+    display: none;
+}
+.up:hover {
+    font-weight: bold;
+    cursor: pointer;
+    scale: 1.1;
+    
 }
 .usluga {
     width: 30%;
@@ -156,6 +176,7 @@ footer i:hover {
 @media (width < 380px) {
     nav {
         font-size: 20px;
+        position: relative;
     }
     .logo {
         font-size: 30px;
@@ -164,16 +185,16 @@ footer i:hover {
         width: 60px;
     }
     h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
     .header_offer {
-        padding: 3% 5%;
+        padding: 5% 5%;
         font-size: 20px;
         line-height: 90%
     }
     .header_offer p {
         margin-top: 5%;
-        font-size: 20px;
+        font-size: 14px;
         color: grey;
     }
     section {
