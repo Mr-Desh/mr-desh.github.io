@@ -1,8 +1,10 @@
-// DARK THEME
-const toggleTheme = document.getElementById('toggleDark')
+"use strict"
 
-const header = document.querySelector('header')
-const sideMenu = document.getElementById('side-menu')
+// DARK THEME
+let toggleTheme = document.getElementById('toggleDark')
+
+let header = document.querySelector('header')
+let sideMenu = document.getElementById('side-menu')
 
 toggleTheme.addEventListener('click', function() {
     this.classList.toggle('bi-moon-fill')

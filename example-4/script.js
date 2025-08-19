@@ -1,5 +1,7 @@
-var up = document.getElementById('up')
-var header = document.querySelector('header')
+"use strict"
+
+let up = document.getElementById('up')
+let header = document.querySelector('header')
 
 window.addEventListener("scroll", () => {
     if (window.pageYOffset > 450) {
