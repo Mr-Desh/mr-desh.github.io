@@ -1,7 +1,17 @@
 "use strict";
 
-// THEME
+// Menu
+document.getElementById('menu-icon').addEventListener('click', () => {
+    document.getElementById('menu-icon').style.left = '-100px'
+    document.getElementById('menu').style.left = '0'
+})
+document.getElementById('menu-arrow-close').addEventListener('click', () => {
+    document.getElementById('menu').style.left = '-500px'
+    document.getElementById('menu-icon').style.left = '0'
+    
+})
 
+// THEME
 let theme = document.getElementById("themeToggle");
 let h1 = document.querySelector("h1");
 let blocks = document.querySelectorAll(".main__example-work-block");

@@ -13,6 +13,9 @@ h3 {
     text-transform: uppercase;
     font-weight: bold;
 }
+h4 {
+  text-transform: uppercase;
+}
 
 header {
     display: flex;
@@ -23,6 +26,7 @@ header {
 .header-logo {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 30%;
     padding: 1% 0;
@@ -93,7 +97,7 @@ header {
 .header-nav-buttons {
     width: 15%;
     text-align: center;
-    padding: 5px 0;
+    padding: 0;
     border: 1px solid #01bbff;
     border-radius: 15px;
     color: #01bbff;
@@ -111,72 +115,142 @@ header {
 }
 
 .main-section-1 {
-    background-image: url('Images/fone-1.jpg');
+    background-image: url("Images/fone-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: row;
     padding: 5%;
 }
+.main-section-1_right {
+  min-width: 300px;
+  padding: 10px;
+}
 /* Main-section-1 CLIDER */
 .slider {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
+    position: relative;
+    max-width: 800px;
+    min-width: 400px;
+    margin: 0 auto;
 }
 .slider-container {
-  position: relative;
-  height: 400px;
+    position: relative;
+    height: 400px;
 }
 .slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 10px;
 }
 .slide.active {
-  opacity: 1;
+    opacity: 1;
 }
-.prev-btn, .next-btn {
-  position: absolute;
-  top: 50%;
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-size: 20px;
-  border-radius: 50%;
-  transition: background 0.3s;
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: background 0.3s;
 }
-.prev-btn:hover, .next-btn:hover {
-  background: rgba(0,0,0,0.8);
+.prev-btn:hover,
+.next-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
 .prev-btn {
-  left: 15px;
+    left: 15px;
 }
 .next-btn {
-  right: 15px;
+    right: 15px;
 }
 .dots {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
 }
 .dot {
-  width: 12px;
-  height: 12px;
-  background: rgba(255,255,255,0.5);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background 0.3s;
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 .dot.active {
-  background: white;
+    background: white;
+}
+
+.main-section-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2% 10%;
+}
+.main-section-2-block {
+  width: 300px;
+  padding: 1%;
+  border-radius: 10px;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.267);
+  line-height: 250%;
+  margin-bottom: 20px;
+}
+.main-section-2-block p {
+  font-size: 20px;
+  text-align: center;
+}
+.main-section-2-block hr {
+  color: red;
+}
+.main-section-2-block i {
+  color: rgb(0, 255, 0);
+  margin-right: 10px;
+}
+.main-section-2-block_more-details {
+  background-color: #01bbff ;
+  text-align: center;
+  border-radius: 15px;
+}
+
+@media (width < 1270px) {
+  .main-section-1 {
+    flex-wrap: wrap;
+  }
+  header {
+    padding: 0;
+  }
+  .header-contacts {
+    padding: 5px 10px;
+  }
+  .header-logo {
+    width: 20%;
+  }
+}
+@media (width < 900px) {
+  .header-nav {
+    flex-wrap: wrap;
+  }
+  .header-nav-buttons {
+    width: 100px;
+  }
+}
+@media (width < 450px) {
+  .slider {
+    min-width: 200px;
+  }
+  .slider-container {
+    height: 200px;
+  }
 }

@@ -2,6 +2,7 @@ h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     transition-duration: 1s;
     text-align: center;
+    width: 50%;
 }
 h1:hover {
     transform: scale(1.1);
@@ -12,11 +13,59 @@ body {
     background-color: black;
 }
 
+.menu-icon {
+    position: fixed;
+    left: 0;
+    transition: left 0.5s ease;
+}
+.menu-icon:hover {
+    cursor: pointer;
+}
+.menu-icon img {
+    height: 40px;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    border-radius: 0 10px 10px 0;
+    transition: opacity 0.3s;
+    border: 1px solid white;
+    left: -500px;
+    font-size: 20px;
+    transition: left 0.5s ease;
+    z-index: 1;
+}
+.menu img {
+    height: 30px;
+}
+.menu img:hover {
+    cursor: pointer;
+}
+.vkontakte {
+    color: white;
+    background-color: rgb(0, 132, 255);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.vkontakte a {
+    text-decoration: none;
+    color: white;
+}
+.vkontakte:hover {
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
 header {
     padding: 1% 0;
     color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 header span {
     align-self: last baseline;
@@ -60,6 +109,19 @@ header hr {
 }
 .modal-window-4 img {
     width: 50%;
+}
+@media (width < 400px) {
+    .modal-window-4 {
+        width: 100%;
+        height: 60%;
+        border-radius: 0;
+    }
+    .modal-window-4 img {
+        width: 60%;
+    }
+    .menu-icon img {
+        height: 30px;
+    }
 }
 
 main {
@@ -110,18 +172,4 @@ footer {
     flex-direction: row;
     justify-content: center;
     padding: 1%;
-}
-.vkontakte {
-    color: white;
-    background-color: rgb(0, 132, 255);
-    padding: 1% 2%;
-    font-size: 20px;
-    border-radius: 10px;
-}
-.vkontakte a {
-    text-decoration: none;
-    color: white;
-}
-.vkontakte:hover {
-    box-shadow: 0 0 10px rgb(255, 255, 255);
 }
