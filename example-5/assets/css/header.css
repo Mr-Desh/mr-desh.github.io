@@ -1,0 +1,18 @@
+header {
+    padding: 0 15%;
+}
+.back-to-portfolio {
+    position: fixed;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0 0 15px 0;
+    z-index: 1;
+}
+.back-to-portfolio:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
