@@ -132,9 +132,10 @@ main {
     padding: 0 0 0 0;
     box-shadow: 0 0px 5px rgb(255, 255, 255);
     cursor: pointer;
+    transition-duration: 0.1s;
 }
 .main__example-work-block:hover {
-    transition: 0.2s;
+    transition: 0.3s;
     transform: scale(1.03);
     box-shadow: 0 0px 20px rgb(255, 255, 255);
 }
@@ -149,8 +150,8 @@ main {
     line-height: 200%;
 }
 .main__example-work-block p img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin: 10px 0;
 }
 .main__example-work-block p i {
