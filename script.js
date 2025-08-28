@@ -21,6 +21,7 @@ let h1 = document.querySelector("h1");
 let blocks = document.querySelectorAll(".main__example-work-block");
 let a = document.querySelectorAll("a");
 let hr = document.querySelector("hr");
+let p = document.querySelectorAll('p');
 
 theme.addEventListener("click", () => {
     if (theme.innerText == "Light Theme") {
@@ -37,6 +38,9 @@ theme.addEventListener("click", () => {
             blocks.style.backgroundColor = "lightGrey";
         });
         document.getElementById('menu').style.border = '1px solid black'
+        p.forEach((p) => {
+            p.style.color = 'black'
+        })
     } else {
         theme.innerText = "Light Theme";
         theme.style.color = "white";
@@ -51,6 +55,9 @@ theme.addEventListener("click", () => {
             blocks.style.backgroundColor = "";
         });
         document.getElementById('menu').style.border = '1px solid white'
+        p.forEach((p) => {
+            p.style.color = 'white'
+        })
     }
 });
 

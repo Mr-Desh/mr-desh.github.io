@@ -1,0 +1,106 @@
+h1 {
+    width: 80%;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    margin: 0;
+}
+
+body {
+    padding: 1%;
+    background-color: #17181c;
+}
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+.search {
+    background-color: #373941;
+    border-radius: 15px;
+    width: 10%;
+    padding: 5px;
+    text-align: center;
+    margin-right: 5px;
+}
+.search img {
+    width: 25px;
+}
+.add {
+    background-color: blue;
+    border-radius: 15px;
+    width: 10%;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.groups {
+    display: flex;
+    flex-direction: row;
+}
+.groups-1 {
+    font-size: 14px;
+    color: white;
+    margin-left: 10px;
+    padding: 3px;
+}
+.groups-2 {
+    width: 50px;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    color: #8b8c92;
+    margin-left: 10px;
+    padding: 3px;
+}
+.groups--active {
+    border-bottom: 3px solid rgb(77, 77, 255);
+}
+.number {
+    background-color: #373941;
+    color: #b0b1b9;
+    border-radius: 15px;
+    padding: 0 5px;
+}
+
+main {
+    height: 85vh;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #505361;
+}
+.footer--active {
+    color: rgb(77, 77, 255);
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 100%;
+}
+.phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 100%;
+}
+.chats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 100%;
+}
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 100%;
+}
