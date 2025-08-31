@@ -1,0 +1,24 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../../images/footer-fone.jpg');
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: cover;
+    padding: 3%;
+    color: white;
+}
+footer img {
+    width: 15%;
+}
+footer ul {
+    list-style: none;
+    line-height: 200%;
+}
+footer i {
+    color: #00bbff;
+    border: 2px solid #00bbff;
+    border-radius: 15px;
+    padding: 2px 5px;
+}

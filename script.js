@@ -1,7 +1,7 @@
 "use strict";
 
 // Count
-document.querySelector('h1').innerText += ' (' + document.getElementsByClassName('main__example-work-block').length + ' проектов)'
+document.querySelector('h1').innerText += ' (' + document.getElementsByClassName('main__project-card').length + ' проектов)'
 
 // Menu
 document.getElementById('menu-icon').addEventListener('click', () => {
@@ -17,8 +17,7 @@ document.getElementById('menu-arrow-close').addEventListener('click', () => {
 
 // THEME
 let theme = document.getElementById("themeToggle");
-let h1 = document.querySelector("h1");
-let blocks = document.querySelectorAll(".main__example-work-block");
+let blocks = document.querySelectorAll(".main__project-card");
 let a = document.querySelectorAll("a");
 let hr = document.querySelector("hr");
 let p = document.querySelectorAll('p');
@@ -28,7 +27,7 @@ theme.addEventListener("click", () => {
         theme.innerText = "Dark Theme";
         theme.style.color = "black";
         document.body.style.backgroundColor = "white";
-        h1.style.color = "black";
+        document.querySelector("h1").style.color = "black";
         hr.style.border = "5px solid black";
         a.forEach((a) => {
             a.style.color = "black";
@@ -45,7 +44,7 @@ theme.addEventListener("click", () => {
         theme.innerText = "Light Theme";
         theme.style.color = "white";
         document.body.style.backgroundColor = "black";
-        h1.style.color = "white";
+        document.querySelector("h1").style.color = "white";
         hr.style.border = "5px solid white";
         a.forEach((a) => {
             a.style.color = "white";
@@ -61,11 +60,22 @@ theme.addEventListener("click", () => {
     }
 });
 
-
-// Modals Windows
-document.getElementById("block-4-for-modal").addEventListener("click", function () {
-    document.getElementById("myModal-4").style.display = "block";
-});
-document.getElementById("myModal-4-Close").addEventListener("click", function () {
-    document.getElementById("myModal-4").style.display = "none";
-});
+// Navigation
+document.getElementById('project-6').addEventListener('click', () => {
+    window.location.href = 'projects/project-6/pages/home/index.html'
+})
+document.getElementById('project-5').addEventListener('click', () => {
+    window.location.href = 'projects/project-5/pages/home/index.html'
+})
+document.getElementById('project-4').addEventListener('click', () => {
+    window.location.href = 'projects/project-4/index.html'
+})
+document.getElementById('project-3').addEventListener('click', () => {
+    window.location.href = 'projects/project-3/index.html'
+})
+document.getElementById('project-2').addEventListener('click', () => {
+    window.location.href = 'projects/project-2/index.html'
+})
+document.getElementById('project-1').addEventListener('click', () => {
+    window.location.href = 'projects/project-1/index.html'
+})
