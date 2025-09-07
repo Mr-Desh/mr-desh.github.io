@@ -1,0 +1,197 @@
+* {
+    font-family: "Jost", sans-serif;
+}
+
+h1, h3,
+.header__logo,
+.header__phone {
+    text-transform: uppercase;
+}
+h1,
+h2, h3,
+.header__logo,
+.header__phone {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 5rem; /* 80px */
+}
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+h3 {
+    font-size: 2rem;
+}
+
+header,
+.school {
+    background-color: #141024;
+    color: white;
+}
+
+header {
+    padding: 30px 0;
+    font-size: 2rem; /* 32px */
+}
+main {
+}
+footer {
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+.nav__item {
+    font-size: 1.5rem;
+}
+
+.school {
+    padding-top: 50px;
+}
+.school img {
+    width: 90%;
+}
+.course {
+    place-self: center;
+}
+.course p {
+    font-size: 1.4rem;
+}
+.school__take-course {
+    max-width: 300px;
+    text-align: center;
+    padding: 25px 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #d52027;
+    border: 3px solid #d52027;
+    transition: background-color 0.5s, color 0.5s;
+}
+.school__take-course:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #d52027;
+}
+
+.about,
+.perspectives {
+    padding: 120px 0;
+    font-size: 1.3rem;
+}
+.about span {
+    display: block;
+    width: 70%;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+.about p {
+    color: red;
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.perspectives {
+    background-color: #f9f9f9;
+}
+.perspectives i:hover {
+    cursor: pointer;
+}
+.perspectives p {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.perspectives__tooltip-toggle {
+    display: inline-block;
+}
+.perspectives__tooltip-toggle:hover .perspectives__tooltip {
+    visibility: visible;
+}
+.perspectives__tooltip {
+    box-shadow: 0 0 10px black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 300px;
+    position: absolute;
+    transform: translateY(-230%) translateX(35%);
+    z-index: 1;
+    visibility: hidden;
+}
+
+.coaches {
+    padding: 120px 0;
+}
+.coaches__slider {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* для плавной прокрутки на мобильных устройствах */
+    padding: 50px 0;
+}
+.coaches__slider__item {
+    margin-right: 30px;
+    scroll-snap-align: start;
+}
+.coaches__slider__item img {
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+}
+.coaches__slider__item p {
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+.coaches__slider__item a {
+    text-decoration: none;
+    color: brown;
+}
+
+.packege {
+    justify-content: space-between;
+    padding: 60px 0;
+}
+.packege-item__parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 450px;
+}
+.packege-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 50px;
+    transition: height 0.4s ease;
+}
+.packege-item:hover {
+    height: 100%;
+    background-color: #141024;
+    color: white;
+}
+.packege-item h2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    transition: ease-in-out;
+}
+.packege__order {
+    background-color: #d52027;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    transition: ease-in-out;
+}
+.packege__order:hover {
+    cursor: pointer;
+}
