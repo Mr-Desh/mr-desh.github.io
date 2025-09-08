@@ -62,7 +62,7 @@ theme.addEventListener("click", () => {
 
 // Navigation
 document.getElementById('project-6').addEventListener('click', () => {
-    window.location.href = 'projects/project-6-robo-school/index.html'
+    window.location.href = 'projects/project-6-robo-school/index.php'
 })
 document.getElementById('project-5').addEventListener('click', () => {
     window.location.href = 'projects/project-5/pages/home/index.html'
