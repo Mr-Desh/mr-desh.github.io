@@ -1,0 +1,15 @@
+/* Buttom "BackToPortfolio" */
+.back-to-portfolio {
+    position: fixed;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 0 0 15px 0;
+    z-index: 2;
+}
+.back-to-portfolio:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

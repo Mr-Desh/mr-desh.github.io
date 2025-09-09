@@ -22,11 +22,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
+    <link rel="stylesheet" href="../../assets/css/main.css">
+
     <!-- My CSS -->
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
+    <div id="header-portfolio"></div>
     <header>
         <div class="row text-center">
             <div class="col-3 header__logo">robo.school</div>
@@ -241,6 +244,9 @@
             <div class="col-11"><p>© ROBO.SCHOOL</p></div>
         </div>
     </footer>
+
+    <!-- Main JS -->
+    <script src="../../assets/js/main.js"></script>
 
     <!-- My JavaScript -->
     <script src="assets/js/main.js"></script>
