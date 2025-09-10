@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>ROBO SCHOOL</title>
+    <title>Project 6 "ROBO SCHOOL"</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -29,31 +29,39 @@
 </head>
 
 <body>
+    <div id="modal1" class="modal"></div>
+    <div id="modal2" class="modal"></div>
+    <div id="modal3" class="modal"></div>
+    <div id="modal4" class="modal"></div>
+    <div id="modal5" class="modal"></div>
+    <div id="overlay"></div>    
     <div id="header-portfolio"></div>
     <header>
-        <div class="row text-center">
-            <div class="col-3 header__logo">robo.school</div>
-            <div class="col-6">
-                <nav>
-                    <div class="nav__item"><a href="#about">О школе</a></div>
-                    <div class="nav__item"><a href="#coaches">Тренеры</a></div>
-                    <div class="nav__item"><a href="#packege">Стоимость</a></div>
-                </nav>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm col-md-4 col-lg-3 header__logo">robo.school</div>
+                <div class="col-sm col-md-4 col-lg-6">
+                    <nav>
+                        <div class="nav__item"><a href="#about">О школе</a></div>
+                        <div class="nav__item"><a href="#coaches">Тренеры</a></div>
+                        <div class="nav__item"><a href="#packege">Стоимость</a></div>
+                    </nav>
+                </div>
+                <div class="col-sm col-md-4 col-lg-3 header__phone">+7 800 000 11 22</div>
             </div>
-            <div class="col-3 header__phone">+7 800 000 11 22</div>
         </div>
     </header>
-    <main>
+    <main >
         <div id="up" class="up">UP</div>
         <section class="school">
             <div class="container">
                 <div class="row">
-                    <div class="col course">
+                    <div class="col-12-xs col-sm-6 course">
                         <h1>robo school</h1>
                         <p>Курсы повышения квалификации по роботехнике для педагогов начальной школы</p>
                         <div class="school__take-course">Записаться на курс</div>
                     </div>
-                    <div class="col text-center">
+                    <div class="col-12-xs col-sm-6 text-center">
                         <img src="images/hero-image.png" alt="hero image" />
                     </div>
                 </div>
@@ -68,19 +76,19 @@
                             программирования
                         </span>
                     </div>
-                    <div class="col-3">
+                    <div class="text-center text-sm-start col-sm-6 col-xl-3">
                         <p>10</p>
                         УМК по различным направлениям по роботетехнике
                     </div>
-                    <div class="col-3">
+                    <div class="text-center text-sm-start col-sm-6 col-xl-3">
                         <p>20</p>
                         Шкоп, в которых запущена работотехника
                     </div>
-                    <div class="col-3">
+                    <div class="text-center text-sm-start col-sm-6 col-xl-3">
                         <p>100</p>
                         Педагогов прошедших курсы повышения квалификации
                     </div>
-                    <div class="col-3">
+                    <div class="text-center text-sm-start col-sm-6 col-xl-3">
                         <p>10 000</p>
                         Обученных детей на базе собственных центров
                     </div>
@@ -93,15 +101,15 @@
                     <div class="col-12">
                         <h2>Что вы получите после курса</h2>
                     </div>
-                    <div class="col-4">
+                    <div class="col-xs-12 col-sm-4">
                         <p>Удостоверение</p>
                         Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях
                     </div>
-                    <div class="col-4">
+                    <div class="col-xs-12 col-sm-4">
                         <p>Знания</p>
                         По основам разработки учебно-методических комплексов по робототехниук и программированию
                     </div>
-                    <div class="col perspectives__tooltip-toggle">
+                    <div class="col-xs-12 col-sm-4 perspectives__tooltip-toggle">
                         <p>
                             Практику <sup><i class="bi bi-info-circle"></i></sup>
                         </p>
@@ -123,31 +131,31 @@
                                 <img src="images/photo_coach-1.jpg" alt="photo coach 1" />
                                 <p>Ирина Лайм</p>
                                 преподаватель по робототехнике <br />
-                                <a href="#">Подробнее</a>
+                                <div id="IrinaLaim" class="more">Подробнее</div>
                             </div>
                             <div class="coaches__slider__item">
                                 <img src="images/photo_coach-2.jpg" alt="photo coach 2" />
                                 <p>Марина Орлова</p>
                                 преподаватель по робототехнике <br />
-                                <a href="#">Подробнее</a>
+                                <div id="MarinaOrlova" class="more">Подробнее</div>
                             </div>
                             <div class="coaches__slider__item">
                                 <img src="images/photo_coach-3.jpg" alt="photo coach 3" />
                                 <p>Максим Петров</p>
                                 преподаватель по программированию <br />
-                                <a href="#">Подробнее</a>
+                                <div id="MaksimPetrov" class="more">Подробнее</div>
                             </div>
                             <div class="coaches__slider__item">
                                 <img src="images/photo_coach-4.jpg" alt="photo coach 4" />
                                 <p>Константин Назаров</p>
                                 преподаватель по робототехнике <br />
-                                <a href="#">Подробнее</a>
+                                <div id="KonstantinNazarov" class="more">Подробнее</div>
                             </div>
                             <div class="coaches__slider__item">
                                 <img src="images/photo_coach-5.jpg" alt="photo coach 5" />
                                 <p>Лиза Весенняя</p>
                                 преподаватель по программированию <br />
-                                <a href="#">Подробнее</a>
+                                <div id="LisaVesennyaya" class="more">Подробнее</div>
                             </div>
                         </div>
                     </div>
@@ -160,7 +168,7 @@
                     <div class="col-12">
                         <h2>Выберите нужный пакет</h2>
                     </div>
-                    <div class="col-4 text-center packege-item__parent">
+                    <div class="col-12 col-sm-12 col-md-4 text-center packege-item__parent">
                         <div class="packege-item">
                             <h3>-- pro --</h3>
                             <h2>20.000 ₽</h2>
@@ -168,7 +176,7 @@
                             <div class="packege__order">Оставить заявку</div>
                         </div>
                     </div>
-                    <div class="col-4 text-center packege-item__parent">
+                    <div class="col-12 col-sm-12 col-md-4 text-center packege-item__parent">
                         <div class="packege-item">
                             <h3>-- robo --</h3>
                             <h2>15.000 ₽</h2>
@@ -176,7 +184,7 @@
                             <div class="packege__order">Оставить заявку</div>
                         </div>
                     </div>
-                    <div class="col-4 text-center packege-item__parent">
+                    <div class="col-12 col-sm-12 col-md-4 text-center packege-item__parent">
                         <div class="packege-item">
                             <h3>-- prog --</h3>
                             <h2>10.000 ₽</h2>
@@ -202,32 +210,34 @@
                             <input type="submit" value="Оформить заявку" class="submit">
                         </form>
                         <?php
-                            $output = "";
-                            if ( isset($_POST["name"]) && ($_POST["name"] != "") && isset($_POST["phone"]) && ($_POST["phone"] != "") &&
-                                isset($_POST["email"]) && ($_POST["email"] != "") ) {
-                                if ((strlen($_POST["phone"]) == 10)) {
-                                    $name = $_POST["name"];
-                                    $phone = $_POST["phone"];
-                                    $email = $_POST["email"];
+                        $output = "";
+                        if (
+                            isset($_POST["name"]) && ($_POST["name"] != "") && isset($_POST["phone"]) && ($_POST["phone"] != "") &&
+                            isset($_POST["email"]) && ($_POST["email"] != "")
+                        ) {
+                            if ((strlen($_POST["phone"]) == 10)) {
+                                $name = $_POST["name"];
+                                $phone = $_POST["phone"];
+                                $email = $_POST["email"];
 
-                                    $output = "
+                                $output = "
                                             Форма обработана успешно! <br>
                                             Введенные данные: <br>
                                             Вас зовут: $name<br />
                                             Ваш номер телефона: +7 $phone<br />
                                             Ваша почта: $email<br />
                                     ";
-                                } else {
-                                    $output = "
-                                        Проверьте правильность ввода номера телефона. Обратите внимание, что следует вводить без +7!
-                                    ";
-                                }
                             } else {
                                 $output = "
+                                        Проверьте правильность ввода номера телефона. Обратите внимание, что следует вводить без +7!
+                                    ";
+                            }
+                        } else {
+                            $output = "
                                     Пожалуйста заполните все поля!
                                 ";
-                            }                             
-                            echo $output;
+                        }
+                        echo $output;
                         ?>
                     </div>
                 </div>
@@ -235,13 +245,14 @@
         </section>
     </main>
     <footer>
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-5">ROBO.SCHOOL</div>
-            <div class="col-5 text-end">+7 800 000 11 22</div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-11"><p>© ROBO.SCHOOL</p></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center col-md-6">ROBO.SCHOOL</div>
+                <div class="col-12 text-center col-md-6 text-md-end">+7 800 000 11 22</div>
+                <div class="col-12 text-center">
+                    <p>© ROBO.SCHOOL</p>
+                </div>
+            </div>
         </div>
     </footer>
 
